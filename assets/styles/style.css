@@ -312,14 +312,14 @@ button {
     display: none;
   }
   .hero .content .product-title {
-    grid-area: 1/1/2/3 !important;
-    padding-bottom: 5em !important;
-    padding-left: 0 !important;
+    grid-area: 1/1/2/3;
+    padding-bottom: 5em;
+    padding-left: 0;
   }
   .hero .content .product-description {
-    grid-area: 4/1/6/3 !important;
-    padding-bottom: 5em !important;
-    padding-left: 0 !important;
+    grid-area: 4/1/6/3;
+    padding-bottom: 5em;
+    padding-left: 0;
   }
   .hero .content .product-description .product-status {
     padding-top: 1em;
@@ -341,7 +341,7 @@ button {
     max-width: 118px;
   }
   .hero .content .product-preview {
-    grid-area: 2/1/3/2 !important;
+    grid-area: 2/1/3/2;
     display: grid;
     place-items: center center;
   }
