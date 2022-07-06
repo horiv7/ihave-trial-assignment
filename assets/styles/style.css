@@ -426,4 +426,94 @@ button {
   .hero .content .product-status {
     padding-top: 1em;
   }
+}
+
+.product-features {
+  background-image: url("./../images/product-features.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-features .content {
+  display: grid;
+  place-items: center;
+}
+.product-features .content .tabs {
+  width: 63.125%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-features .content .tabs .tabs-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #656565;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+}
+.product-features .content .tabs .tabs-navigation li {
+  border-collapse: collapse;
+  margin-bottom: -3px;
+}
+.product-features .content .tabs .tabs-navigation li h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: black;
+  padding: 1em !important;
+}
+.product-features .content .tabs .tabs-navigation .active-tab {
+  border-bottom: 5px solid #ff9300;
+  border-collapse: collapse;
+}
+.product-features .content .tabs p {
+  color: #656565;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 1.5em;
+  letter-spacing: 0px;
+}
+@media screen and (max-width: 1455px) {
+  .product-features {
+    grid-template-columns: minmax(50%, 75%) auto;
+  }
+}
+@media screen and (max-width: 1135px) {
+  .product-features {
+    grid-template-columns: 1fr;
+  }
+  .product-features .content {
+    margin: 0 10%;
+  }
+  .product-features .content .tabs {
+    width: calc(100% - 76px);
+    padding: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .product-features .content {
+    margin: 0 7.4vw;
+  }
+}
+@media screen and (max-width: 590px) {
+  .product-features .content {
+    margin: 0 7.4vw;
+  }
+  .product-features .content .tabs {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .product-features .content {
+    margin: 0 7.4vw;
+  }
+  .product-features .content .tabs {
+    width: 100%;
+  }
+  .product-features .content .tabs .tabs-navigation li h2 {
+    font-size: 1.3rem !important;
+    padding: 5% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
