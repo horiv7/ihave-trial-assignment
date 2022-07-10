@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Roboto:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@400;500;700&display=swap");
 * {
   list-style: none;
   margin: 0;
@@ -25,6 +24,7 @@ button {
 $text-secondary: #656565;
 $warning-color: #ff9300;
 $white-color: #ffffff;
+$background-grey: #ebeff7;
 
 //**********COMMON***********************//
 .cta {
@@ -680,6 +680,95 @@ $white-color: #ffffff;
         .headline {
           font-size: 2rem !important;
           padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+//**********RELATED PRODUCTS SECTION***********************//
+
+.related-products {
+  background-color: $background-grey;
+  min-height: 93.5vh;
+  padding: 0 7.4vw 10.28vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". title title ."
+    "products products products products";
+
+  .title {
+    grid-area: title;
+    text-align: center;
+    margin-top: 8em;
+    .headline {
+      text-align: center;
+      color: black;
+      font-size: 50px;
+      letter-spacing: 0px;
+      margin-bottom: 0.48em;
+      line-height: 74px;
+    }
+    p {
+      color: $text-secondary;
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 3.555em;
+      letter-spacing: 0px;
+      line-height: 27px;
+    }
+  }
+  .content {
+    grid-area: products;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .product-card {
+      display: grid;
+      place-items: center;
+
+      img {
+        aspect-ratio: 1;
+        max-width: 100%;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+        font-size: 36px;
+        line-height: 53px;
+        letter-spacing: 0px;
+        margin: 0.667em 0 0.445em;
+      }
+      .price {
+        font-family: "Oswald", sans-serif !important;
+        font-weight: 200;
+        font-size: 50px;
+        line-height: 74px;
+        color: $warning-color;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1055px) {
+    padding: 0 7.4vw 1em;
+    grid-template-areas:
+      "title title title title"
+      "products products products products";
+
+    .content {
+      flex-wrap: wrap;
+      .product-card {
+        max-width: 40%;
+        margin-bottom: 3em;
+        h2 {
+          font-size: 24px;
+        }
+        .price {
+          font-size: 36px;
+          line-height: 44px;
         }
       }
     }
