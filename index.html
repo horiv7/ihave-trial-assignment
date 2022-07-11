@@ -21,7 +21,7 @@
           <li><a href="">Kontakt</a></li>
         </ul>
         <ul class="icon-nav">
-          <li>
+          <li id="search-icon">
             <a href=""><img src="./assets/images/surface1.svg" alt="" /></a>
           </li>
           <li>
@@ -29,7 +29,7 @@
               ><img src="./assets/images/shopping-cart.svg" alt=""
             /></a>
           </li>
-          <li>
+          <li id="menu-icon">
             <a href=""><img src="./assets/images/Group 11.svg" alt="" /></a>
           </li>
         </ul>
@@ -67,7 +67,7 @@
             alt="product-big-image-1"
           />
         </div>
-        <div class="product-description">
+        <div class="product-title">
           <div class="stars-container">
             <div class="stars">
               <svg viewBox="0 0 576 512" width="100" title="star">
@@ -103,6 +103,8 @@
               for a long time.
             </p>
           </div>
+        </div>
+        <div class="product-description">
           <div class="price"><span>41,99 KM</span></div>
           <div class="quantity-container">
             <div class="quantity">
@@ -150,5 +152,201 @@
         </div>
       </div>
     </section>
+    <section class="product-features">
+      <div class="content">
+        <div class="tabs">
+          <ul class="tabs-navigation">
+            <li class="active-tab"><h2>Opis</h2></li>
+            <li><h2>Specifikacije</h2></li>
+            <li><h2>Ostalo</h2></li>
+          </ul>
+          <div class="tab-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="content">
+        <div class="cta-container">
+          <h1 class="headline">Iskoristiti momente uživanja, na pravi način</h1>
+          <p class="subline">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="cta">
+            <button class="btn btn-primary">Kupi</button>
+            <button class="btn btn-secondary">Dodaj u korpu</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="related-products">
+      <div class="title">
+        <h1 class="headline">Povezani proizvodi</h1>
+        <p class="subline">
+          Large-size earmuffs that could cover the whole ears, paired with
+          thick, soft earmuffscan make it comfortable to immerse in music for a
+          long time.
+        </p>
+      </div>
+      <div class="content">
+        <div class="product-card">
+          <img
+            src="./assets/images/related-product1.png"
+            alt="related-product1"
+          />
+          <h2>Casque Bluetooth DeFunc</h2>
+          <span class="price">39,99 KM</span>
+        </div>
+        <div class="product-card">
+          <img
+            src="./assets/images/related-product2.png"
+            alt="related-product1"
+          />
+          <h2>Inkax HP-07</h2>
+          <span class="price">50,99 KM</span>
+        </div>
+        <div class="product-card">
+          <img
+            src="./assets/images/related-product3.png"
+            alt="related-product1"
+          />
+          <h2>L'avvento (HP07N)</h2>
+          <span class="price">60,99 KM</span>
+        </div>
+        <div class="product-card">
+          <img
+            src="./assets/images/related-product4.png"
+            alt="related-product1"
+          />
+          <h2>Bluetooth inkax HP-05</h2>
+          <span class="price">41,99 KM</span>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="title"><h1>Gdje želite da Vam dostavimo proizvod?!</h1></div>
+      <div class="content">
+        <div class="image">
+          <img src="./assets/images/form-image.png" alt="form-image" />
+        </div>
+        <form action="">
+          <div class="form-field">
+            <label for="full-name">Ime i prezime</label>
+            <input type="text" name="full-name" id="full-name" />
+          </div>
+          <div class="form-field">
+            <label for="address">Ulica i broj</label>
+            <input type="text" name="address" id="address" />
+          </div>
+          <div class="form-field">
+            <label for="city">Grad</label>
+            <input type="text" name="city" id="city" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email adressa</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="phone">Broj telefona</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="form-field">
+            <label for="message">Vaša poruka / doatne informacije</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="cta">
+            <button type="submit" class="btn btn-primary">Kupi</button>
+            <p>
+              <img src="./assets/images/shield.svg" alt="shield" />Vaša kupovina
+              je sigurna.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="col-1">
+        <ul class="contact">
+          <li>KONTAKT I PODRŠKA</li>
+          <li>Adresa: Prote Nikole Kostića bb</li>
+          <li>Email: info@simel-bih.com</li>
+          <li>Skype: simel-bih</li>
+
+          <div class="phone">
+            <img src="./assets/images/headphones.svg" alt="headphones" />
+            <p><span>Pozovite nas!</span> <strong>+387 51 535 560</strong></p>
+          </div>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="about-us">
+          <li>O NAMA</li>
+          <li>Dostava</li>
+          <li>Garancija kvaliteta</li>
+          <li>Način plaćanja</li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <ul class="help">
+          <li>POMOĆ</li>
+          <li>Kako se registrovati?</li>
+          <li>Često postavljana pitanja</li>
+          <li>Uslovi korištenja</li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <div class="container">
+          <a href="">SOCIJALNE MREŽE</a>
+          <ul class="social">
+            <li>
+              <a href="">
+                <img src="./assets/images/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="./assets/images/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <img src="./assets/images/linkendin.svg" alt="linkendin" />
+              </a>
+            </li>
+          </ul>
+          <div class="logo">
+            <a href=""><img src="./assets/images/logo.png" alt="logo" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>
+        Copyright © <span>NENASAL d.o.o 2020</span> All Rights Reserved. Powered
+        by <span>NENASAL</span>
+      </p>
+    </div>
   </body>
 </html>
