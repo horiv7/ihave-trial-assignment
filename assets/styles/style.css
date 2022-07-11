@@ -33,6 +33,8 @@ button {
   height: 61px;
   font-weight: bold;
   font-size: 24px;
+  letter-spacing: 1.44px;
+  line-height: 29px;
 }
 .cta .btn-primary {
   padding: 16px 80px;
@@ -178,6 +180,7 @@ button {
   font-size: 64px;
   letter-spacing: 0px;
   color: #231f20;
+  line-height: 94px;
 }
 .hero .content .product-title .description {
   grid-area: 3/1/4/3;
@@ -185,6 +188,7 @@ button {
   font-weight: 400;
   letter-spacing: 0px;
   color: #656565;
+  line-height: 27px;
 }
 .hero .content .product-description {
   grid-area: 2/3/5/4;
@@ -205,6 +209,7 @@ button {
   font-weight: 300;
   font-size: 50px;
   color: #ff9300;
+  line-height: 74px;
 }
 .hero .content .product-description .quantity-container {
   grid-area: 1/2/2/3;
@@ -224,6 +229,7 @@ button {
   font-family: "Oswald", sans-serif !important;
   font-weight: 400;
   font-size: 24px;
+  line-height: 36px;
   color: #4b4b4b;
 }
 .hero .content .product-description .quantity-container .quantity button {
@@ -256,6 +262,7 @@ button {
   text-align: left;
   margin: 0;
   padding: 0;
+  line-height: 27px;
 }
 .hero .content .social-links {
   grid-area: 1/4/5/5;
@@ -473,6 +480,8 @@ button {
 .product-features .content .tabs .tabs-navigation li h2 {
   text-transform: uppercase;
   font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0.96px;
   color: black;
   padding: 1em !important;
 }
@@ -481,11 +490,12 @@ button {
   border-collapse: collapse;
 }
 .product-features .content .tabs p {
-  color: #656565;
   font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 1.5em;
+  font-weight: 400;
   letter-spacing: 0px;
+  color: #656565;
+  line-height: 27px;
+  margin-bottom: 1.5em;
 }
 @media screen and (max-width: 1388px) {
   .product-features {
@@ -556,13 +566,15 @@ button {
   font-size: 50px;
   letter-spacing: 0px;
   margin-bottom: 0.48em;
+  line-height: 60px;
 }
 .cta-section .content .cta-container p {
-  color: #656565;
   font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 1.5em;
+  font-weight: 400;
   letter-spacing: 0px;
+  color: #656565;
+  line-height: 27px;
+  margin-bottom: 1.5em;
 }
 @media screen and (max-width: 1900px) {
   .cta-section {
@@ -654,12 +666,12 @@ button {
   line-height: 74px;
 }
 .related-products .title p {
-  color: #656565;
   font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 3.555em;
+  font-weight: 400;
   letter-spacing: 0px;
+  color: #656565;
   line-height: 27px;
+  margin-bottom: 3.555em;
 }
 .related-products .content {
   grid-area: products;
@@ -796,6 +808,8 @@ button {
   height: 61px;
   font-weight: bold;
   font-size: 24px;
+  letter-spacing: 1.44px;
+  line-height: 29px;
   margin-top: 8.8px;
 }
 .form .content form .cta .btn-primary {
@@ -816,10 +830,10 @@ button {
 .form .content form .cta p {
   margin: 0;
   margin-top: 1em;
-  display: flex;
   color: #656565;
-  text-align: left;
   padding: 0;
+  width: 396px;
+  text-align: center;
 }
 @media screen and (max-width: 1055px) {
   .form .content {
@@ -831,12 +845,27 @@ button {
     display: grid;
     place-items: center;
   }
+  .form .content form .form-field {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .form .content form .form-field label {
+    max-width: 396px;
+    width: 100%;
+  }
   .form .content form .form-field input,
 .form .content form .form-field textarea {
     max-width: 396px;
     width: 100%;
   }
-  .form .content form .cta .btn {
+  .form .content form .cta {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .form .content form .cta .btn,
+.form .content form .cta p {
     max-width: 396px;
     width: 100%;
   }
@@ -849,10 +878,155 @@ button {
     width: 100%;
   }
 }
-@media screen and (max-width: 1055px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .form .title h1 {
     max-width: 396px;
     width: 100%;
     font-size: 32px;
+  }
+}
+footer {
+  min-height: 43.518vh;
+  background-color: #ebeff7;
+  padding: 8.25em 7.4vw 8em;
+  display: grid;
+  grid-template-columns: repeat(2, 25%) 22.4327% auto;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-template-areas: "col-1 col-2 col-3 col-4";
+}
+footer .col-1 ul li,
+footer .col-2 ul li,
+footer .col-3 ul li {
+  font-size: 18px;
+  color: #656565;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 1rem;
+}
+footer .col-1 {
+  grid-area: col-1;
+}
+footer .col-1 .phone {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+footer .col-1 .phone img {
+  aspect-ratio: 1;
+  width: 40px;
+}
+footer .col-1 .phone p {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .col-1 .phone p span {
+  font-size: 18px;
+  line-height: 22px;
+}
+footer .col-1 .phone p span:first-child {
+  font-size: 12px;
+  line-height: 14px;
+}
+footer .col-2 {
+  grid-area: col-2;
+  padding-left: 8.5rem;
+}
+footer .col-3 {
+  grid-area: col-3;
+}
+footer .col-4 {
+  grid-area: col-4;
+}
+footer .col-4 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .col-4 .container a {
+  font-size: 18px;
+  color: #656565;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 1rem;
+}
+footer .col-4 .container ul {
+  display: flex;
+  flex-direction: row;
+}
+footer .col-4 .container ul li {
+  margin: 0 12px 0.5rem 0;
+}
+footer .col-4 .container ul img {
+  width: 24px;
+  aspect-ratio: 1;
+}
+footer .col-4 .container .logo {
+  margin-top: 44px;
+  width: calc(33% - 7.4vw);
+}
+footer .col-4 .container .logo img {
+  height: 30px;
+}
+@media screen and (max-width: 1470px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer .col-2 {
+    padding-left: 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .col-2 {
+    padding-left: 0;
+  }
+  footer .col-1,
+footer .col-2,
+footer .col-3,
+footer .col-4 {
+    margin-top: 4rem;
+    display: grid;
+    place-items: start center;
+  }
+  footer .col-1 ul,
+footer .col-2 ul,
+footer .col-3 ul,
+footer .col-4 ul {
+    width: 253px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  footer {
+    padding: 0 7.4vw 1em;
+  }
+}
+
+.copyright {
+  background-color: #dfe3eb;
+  padding: 2.5rem 7.4vw;
+}
+.copyright p {
+  font-size: 18px;
+  color: #656565;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.copyright p span {
+  font-weight: 500;
+}
+@media screen and (max-width: 1055px) {
+  .copyright {
+    padding: 2.5rem 7.4vw 2.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
